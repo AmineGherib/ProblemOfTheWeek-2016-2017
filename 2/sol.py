@@ -25,7 +25,7 @@ def select(liste, left, right, n):
         elif n < pivotDist:
             right = pivotNewIndex - 1
         else:
-            n -= pivotDist + 1;
+            n -= pivotDist + 1
             left = pivotNewIndex + 1
 def main(): 
     will_x, will_y = map(int,sys.stdin.readline().split())
