@@ -13,7 +13,6 @@ def idf(T, D):
 
 def main():
     N = input()
-
     D = []
     for i in xrange(N):
        D.append(raw_input())
@@ -22,5 +21,5 @@ def main():
     idfValue = idf(T, D)
     
     for i in xrange(len(D)):
-        print (i+1), "{0:.6f}".format(D[i].count(T) * idfValue)
+        print i+1, "{0:.6f}".format(D[i].count(T) * idfValue)
 main()
